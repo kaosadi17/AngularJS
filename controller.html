@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script src="angular.js"></script>
+	<title>controller</title>
+</head>
+<body>
+<div ng-controller="mainCtrl">
+	<p>Welcome to angular</p>
+</div>
+
+
+<script>
+	var module = angular.module("myApp",[]); //module name, empty array
+	module.controller("mainCtrl",main); //controller name, function name
+
+	function main(){
+		console.log("main called");
+	}
+
+</script>
+
+
+</body>
+</html>

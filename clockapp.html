@@ -8,7 +8,9 @@
 <body>
 
 <div ng-controller="manCtrl">
+	Enter Your name <input ng-model="username" type="text"></input>
 	<p> Current time is : {{timeVal}}</p>
+	<p> Your name is : {{username}}</p>
 	<button ng-click="updatefun()">Refresh</button>
 </div>
 

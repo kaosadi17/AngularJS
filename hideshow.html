@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="myMod">
+<head>
+	<script src="angular.js"></script>
+	<script src="hideshow.js"></script>
+	<title>Hide and show</title>
+</head>
+<body>
+
+<div ng-controller="myCtrl as c1">
+	<input type="checkbox" ng-model="c1.checked"> </input>
+	<p ng-show="c1.checked">Content</p>
+</div>
+
+</body>
+</html>

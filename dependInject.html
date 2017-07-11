@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<script src="angular.js"></script>
+	<title>Dependency Injection</title>
+</head>
+<body>
+<div ng-controller="mainCtrl">
+	<p ng-if="hourVal<12"> Good Morning!!!</p>
+	<p>The hour is : {{hourVal}}</p>
+</div>
+
+
+<script>
+	
+	var module = angular.module("myApp",[]);
+	module.controller("mainCtrl",main);
+
+
+	function main($scope){
+		$scope.hourVal = 10;
+	}
+</script>
+</body>
+</html>

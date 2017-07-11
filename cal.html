@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app = "myMod">
+<head>
+	<script src="angular.js"></script>
+	<script src="cal.js"></script>
+	<title>calculator</title>
+</head>
+<body>
+	<div ng-controller ="mainCtrl as c1">
+		<input type="text" ng-model="c1.input1"></input>
+		<span ng-bind="c1.selectopt"></span>
+		<input type="text" ng-model="c1.input2"></input>
+		<button ng-click="c1.cal()">=</button>
+		<span ng-bind="c1.answer"></span>
+		<p>
+			Choose Calcualtion: 
+			<button ng-click="c1.clickbut('+')">+</button>
+			<button ng-click="c1.clickbut('-')">-</button>
+			<button ng-click="c1.clickbut('*')">*</button>
+			<button ng-click="c1.clickbut('/')">/</button>
+		</p>
+	</div>
+
+</body>
+</html>

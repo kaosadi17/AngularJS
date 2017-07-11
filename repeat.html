@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="repeatMod">
+<head>
+	<script src="angular.js"></script>
+	<script src="repeat.js"></script>
+	<title>repeat</title>
+</head>
+<body>
+	<div ng-controller="repCnt as c1">
+		<div ng-repeat="obj in c1.repar">
+			<p>
+				Name : {{obj.name}}
+			</p>
+			<p>
+				Age : {{obj.age}}
+			</p>
+			<hr>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>

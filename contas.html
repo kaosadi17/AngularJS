@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="mymod">
+<head>
+	<script src="angular.js"></script>
+	<script src="contas.js"></script>
+	<title>Controller as</title>
+</head>
+<body>
+
+<div ng-controller="Ctrl1 as c1">
+	<p>control1 value : {{c1.testval}}</p>
+	<div ng-controller="Ctrl2 as c2">
+		<p>Control2 value : {{c2.testval}}</p>
+	</div>
+</div>
+
+</body>
+</html>
